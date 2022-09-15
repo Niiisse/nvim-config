@@ -1,6 +1,9 @@
 let g:edge_enable_italic = 1
 
-let g:sonokai_style = 'shusia'
+if hostname() == 'vivodebian'
+  let g:sonokai_style = 'shusia'
+endif
+
 let g:sonokai_enable_italic=1
 
 colorscheme sonokai
@@ -25,5 +28,4 @@ let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 
-" set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h10
-"
+set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h10

@@ -40,3 +40,5 @@ set signcolumn=number
 if (has("termguicolors"))
     set termguicolors
 endif
+
+let hostname = substitute(system('hostname'), '\n', '', '')
