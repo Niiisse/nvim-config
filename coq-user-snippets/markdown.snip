@@ -1,0 +1,34 @@
+# Journal week
+snippet journalweek
+alias journalweek
+    # Week ${0:weekno}.
+    **${1:start}** through **${2:end}**
+
+    ## Week Plan
+
+    ### Weekly goals:
+    - [ ] ${3:goal1}
+    - [ ] ${4:goal2}
+
+    ### Last Week
+
+    #### How did last week go?
+    ${5:lastweek}
+
+    #### Goals I didn't complete? (Why?)
+    ${6:goals}
+
+# Journal entry
+snippet journalday
+alias journalday
+    ### Date: ${1:dayname}, ${2:datetime}.
+    ${3:entry}
+
+    #### To-Do:
+    ${4:todo}
+
+    #### What did I work on today?
+    ${5:work}
+
+    #### How do I feel today?
+    ${6:feel}
