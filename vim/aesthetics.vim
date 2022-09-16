@@ -1,7 +1,9 @@
 let g:edge_enable_italic = 1
 
 if hostname() == 'vivodebian'
-  let g:sonokai_style = 'shusia'
+  if g:neovide == true
+    let g:sonokai_style = 'shusia'
+  endif
 endif
 
 let g:sonokai_enable_italic=1

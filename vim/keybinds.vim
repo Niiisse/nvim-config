@@ -76,7 +76,7 @@ nnoremap <leader>s :Telescope file_browser path=~/.config/nvim<CR>
 nnoremap <leader>e :NvimTreeToggle<CR>
 
 " Format code
-noremap <leader>fc :Autoformat<CR>
+nnoremap <leader>fc :Autoformat<CR>
 
 " Show Outline
 nnoremap <leader>o :SymbolsOutline<CR>
@@ -139,8 +139,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>r  <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>fc  <Plug>(coc-format-selected)
-nmap <leader>fc  <Plug>(coc-format-selected)
+" xmap <leader>fc  <Plug>(coc-format-selected)
+" nmap <leader>fc  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
