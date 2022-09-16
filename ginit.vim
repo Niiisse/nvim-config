@@ -2,7 +2,7 @@
 set mouse=a
 
 " Set Editor Font
-GuiFont JetBrains Mono:h11
+GuiFont JetBrains\ Mono:h7
 
 " Disable GUI Tabline
 if exists(':GuiTabline')
@@ -28,8 +28,3 @@ nnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>
 inoremap <silent><RightMouse> <Esc>:call GuiShowContextMenu()<CR>
 xnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>gv
 snoremap <silent><RightMouse> <C-G>:call GuiShowContextMenu()<CR>gv
-
-(when (and (boolean? vim.g.neovide) (= vim.g.neovide true))
-  (g! neovide_remember_window_size true)
-  (if (= vim.fn.getcwd "/")
-      (vim.api.nvim_set_current_dir "~")))

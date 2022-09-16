@@ -41,4 +41,4 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
-let hostname = substitute(system('hostname'), '\n', '', '')
+set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h8
