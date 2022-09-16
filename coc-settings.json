@@ -1,19 +1,21 @@
 {
-    "coc.preferences.snippets.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
 
-    "suggest.floatConfig.border": true,
-    "suggest.floatConfig.rounded": true,
+  "coc.preferences.snippets.enable": true,
 
-    "diagnostic.floatConfig.border": true,
-    "diagnostic.floatConfig.rounded": true,
+  "suggest.floatConfig.border": true,
+  "suggest.floatConfig.rounded": true,
 
-    "signature.floatConfig.border": true,
-    "signature.floatConfig.rounded": true,
+  "diagnostic.floatConfig.border": true,
+  "diagnostic.floatConfig.rounded": true,
 
-    "hover.floatConfig.border": true,
-    "hover.floatConfig.rounded": true,
+  "signature.floatConfig.border": true,
+  "signature.floatConfig.rounded": true,
 
-    "suggest.completionItemKindLabels": {
+  "hover.floatConfig.border": true,
+  "hover.floatConfig.rounded": true,
+
+  "suggest.completionItemKindLabels": {
     "keyword": "\uf1de", //  sliders
     "variable": "\ue79b", //  isometric box
     "value": "\uf89f", //  digits 123
@@ -40,7 +42,7 @@
     "snippet": "\ue60b", //  pair of curly braces
     "typeParameter": "\uf728", //  file presentation box
     "default": "\uf29c" //  question mark in circle
-  },
+  }
 }
 
 // vim: filetype=jsonc
