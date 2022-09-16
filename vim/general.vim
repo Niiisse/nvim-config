@@ -40,5 +40,3 @@ set signcolumn=number
 if (has("termguicolors"))
     set termguicolors
 endif
-
-set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h8

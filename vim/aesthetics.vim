@@ -4,10 +4,10 @@ let g:edge_enable_italic = 1
 if hostname() == 'vivodebian'
   if exists('g:neovide')
     let g:sonokai_style = 'shusia'
-    " GuiFont=JetBrains\ Mono\ Nerd\ Font:h7
+    set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h8
   endif
 elseif hostname() == 'arch-desktop'
-  " set guifont JetBrains Mono:h8
+  set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h10
 endif
 
 let g:sonokai_enable_italic=1
