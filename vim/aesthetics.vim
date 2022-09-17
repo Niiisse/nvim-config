@@ -3,7 +3,7 @@ let g:edge_enable_italic = 1
 " Enable shusia variant for laptop's LCD
 if hostname() == 'vivodebian'
   if exists('g:neovide')
-    let g:sonokai_style = 'shusia'
+    " let g:sonokai_style = 'shusia'
     set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h7.5
   endif
 endif

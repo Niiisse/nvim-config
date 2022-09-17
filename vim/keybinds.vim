@@ -41,7 +41,7 @@ nmap <silent> <A-l> :wincmd l<CR>
 nnoremap <silent> <leader>w <C-w>
 
 " Exit terminal mode with <esc>
-:tnoremap <Esc> <C-\><C-n>
+:tnoremap <leader><Esc> <C-\><C-n>
 
 " window management
 nmap <silent> <A-<left>> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateLeft()<cr>

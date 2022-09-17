@@ -2,7 +2,7 @@
 set mouse=a
 
 " Set Editor Font
-GuiFont JetBrains\ Mono:h7
+GuiFont JetBrains\ Mono:h12
 
 " Disable GUI Tabline
 if exists(':GuiTabline')
