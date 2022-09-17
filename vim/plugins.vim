@@ -50,4 +50,5 @@ Plug 'ellisonleao/gruvbox.nvim'
 Plug 'navarasu/onedark.nvim'
 Plug 'marko-cerovac/material.nvim'
 Plug 'romainl/vim-cool'
+Plug 'AckslD/nvim-neoclip.lua'
 call plug#end()

@@ -9,6 +9,7 @@ require "telescope-c"
 require "bufline"
 require "autotag"
 require "lspsig"
+require "neoclip-config"
 
 require("lspsaga").init_lsp_saga {
     border_style = "round"

@@ -5,4 +5,4 @@ source $HOME/.config/nvim/vim/aesthetics.vim
 source $HOME/.config/nvim/vim/filetypes.vim
 source $HOME/.config/nvim/vim/coc-settings.vim
 
-lua  require("config")
+lua require("init")
