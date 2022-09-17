@@ -40,6 +40,9 @@ nmap <silent> <A-l> :wincmd l<CR>
 " map control-w to leader w
 nnoremap <silent> <leader>w <C-w>
 
+" Exit terminal mode with <esc>
+:tnoremap <leader><Esc> <C-\><C-n>
+
 " window management
 nmap <silent> <A-<left>> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateLeft()<cr>
 nmap <silent> <A-<down>> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateDown()<cr>
@@ -55,6 +58,7 @@ nnoremap <silent> <A-Space> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateN
 
 " Tabs
 nnoremap <leader>wt :tabnew<CR>
+nnoremap <leader>te :term<CR>
 nnoremap <leader>h :tabprevious<CR>
 nnoremap <leader>l :tabnext<CR>
 
