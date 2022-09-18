@@ -1,4 +1,4 @@
-" Telescope
+" parse: Telescope
 nnoremap <leader><space> <cmd>Telescope find_files<CR>
 nnoremap <leader>fg <cmd>Telescope live_grep<CR>
 nnoremap <leader>bb <cmd>Telescope buffers<CR>
@@ -11,23 +11,14 @@ nnoremap <leader>fb <cmd>Telescope file_browser path=%:p:h<CR>
 nnoremap <leader>fp <cmd>Telescope project<CR>
 nnoremap <leader>cp <cmd>Telescope command_palette<CR>
 nnoremap <leader>ff :Telescope file_browser<CR>
+nnoremap <leader>s :Telescope file_browser path=~/.config/nvim<CR>
 
-" LspSaga
-" nnoremap <silent> <leader>d :Lspsaga hover_doc<CR>
-" nnoremap <silent> <leader>fr <Cmd>Lspsaga lsp_finder<CR>
-" nnoremap <silent><leader>ca :Lspsaga code_action<CR>
-" vnoremap <silent> <leader>ca :<C-U>Lspsaga range_code_action<CR>
+" parse: Floaterm
 nnoremap <silent> <leader>tg <Cmd>FloatermNew lazygit<CR>
-" nnoremap <silent> gd <Cmd>Lspsaga preview_definition<CR>
-" nnoremap <silent> <leader>r :Lspsaga rename<CR>
-" nnoremap <silent> <leader>D :Lspsaga show_cursor_diagnostics<CR>
-" nnoremap <silent> ]d :Lspsaga diagnostic_jump_next<CR>
-" " nnoremap <silent> [d :Lspsaga diagnostic_jump_prev<CR>
 nnoremap <silent> <leader>tt :FloatermToggle<CR>
-" tnoremap <silent> <A-d> <C-\><C-n>:Lspsaga close_floaterm<CR>
 
-" Window management - alt + arrow switching
-nmap <silent> <A-Up> :wincmd k<CR>
+" parse: Window management
+nmap <silent> <A-Up> :wincmd k<CR>nnoremap <leader>h :tabprevious<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
@@ -37,13 +28,12 @@ nmap <silent> <A-j> :wincmd j<CR>
 nmap <silent> <A-h> :wincmd h<CR>
 nmap <silent> <A-l> :wincmd l<CR>
 
-" map control-w to leader w
 nnoremap <silent> <leader>w <C-w>
 
-" Exit terminal mode with <esc>
-:tnoremap <leader><Esc> <C-\><C-n>
+" parse: Terminal mode
+tnoremap <leader><Esc> <C-\><C-n>
 
-" window management
+" parse: Tmux navigation
 nmap <silent> <A-<left>> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateLeft()<cr>
 nmap <silent> <A-<down>> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateDown()<cr>
 nmap <silent> <A-<up>> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateUp()<cr>
@@ -56,13 +46,12 @@ nmap <silent> <A-l> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateRight()<c
 nnoremap <silent> <A-\> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateLastActive()<cr>
 nnoremap <silent> <A-Space> :lua require'nvim-tmux-navigation'.NvimTmuxNavigateNext()<cr>
 
-" Tabs
+" parse: Tabs
 nnoremap <leader>wt :tabnew<CR>
 nnoremap <leader>te :term<CR>
 nnoremap <leader>h :tabprevious<CR>
 nnoremap <leader>l :tabnext<CR>
 
-" Go to tab by number
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
@@ -73,17 +62,17 @@ noremap <leader>7 7gt
 noremap <leader>8 8gt
 noremap <leader>9 9gt
 
-" Settings shortcut
-nnoremap <leader>s :Telescope file_browser path=~/.config/nvim<CR>
 
-" Nvimtree
+" parse: Nvimtree
 nnoremap <leader>e :NvimTreeToggle<CR>
 
-" Format code
+" parse: Format code
 nnoremap <leader>fc :Autoformat<CR>
 
-" Show Outline
+" parse: Show Outline
 nnoremap <leader>o :SymbolsOutline<CR>
+
+" parse: COC
 
 " COC
 " Use tab for trigger completion with characters ahead and navigate.
