@@ -46,9 +46,9 @@ Plug 'wellle/targets.vim'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'windwp/nvim-ts-autotag'
 Plug 'leafOfTree/vim-matchtag'
-Plug 'ellisonleao/gruvbox.nvim'
-Plug 'navarasu/onedark.nvim'
-Plug 'marko-cerovac/material.nvim'
 Plug 'romainl/vim-cool'
 Plug 'AckslD/nvim-neoclip.lua'
+Plug 'anuvyklack/middleclass'
+Plug 'anuvyklack/animation.nvim'
+Plug 'anuvyklack/windows.nvim'
 call plug#end()
