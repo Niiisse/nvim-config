@@ -58,4 +58,5 @@ Plug 'leafOfTree/vim-matchtag'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'navarasu/onedark.nvim'
 Plug 'marko-cerovac/material.nvim'
+Plug 'SidOfc/mkdx'
 call plug#end()
